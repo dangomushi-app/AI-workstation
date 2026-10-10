@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI WORKSTATION</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side">
+    <div class="brand">❦ AI WORKSTATION</div>
+    <nav id="nav"></nav>
+    <p class="side-note">良いアイデアは、<br>良い環境から生まれる。</p>
+  </aside>
+
+  <header class="top">
+    <span>AIを、もっと身近に。もっと便利に。</span>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="side">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="p-bars" d="M3 5h14M3 10h14M3 15h14"/><path class="p-x" d="M5 5l10 10M15 5L5 15"/></svg>
+    </button>
+  </header>
+
+  <main class="main">
+    <section class="hero" id="hero">
+      <h1>使いたいAIを、<br>すぐに見つけて、すぐに使える。</h1>
+      <p>あなたの作業をサポートする、AIのポータルサイトです。</p>
+      <form class="search" id="searchForm" role="search">
+        <input id="q" type="search" placeholder="AIを検索する（例：記事作成、画像生成、調査 など）" aria-label="AIを検索" autocomplete="off">
+      </form>
+    </section>
+    <div id="content"></div>
+  </main>
+
+  <footer class="foot">AIは、あなたの「やりたい」をもっと自由にしてくれる。<small>— AI WORKSTATION —</small></footer>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
