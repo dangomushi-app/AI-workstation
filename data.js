@@ -7,7 +7,7 @@ const CATS = [
   { id: "research", name: "調査・リサーチ",   icon: "⌕", desc: "情報収集・市場調査・データ分析に役立つAIを集めました。" },
   { id: "image",    name: "画像生成",         icon: "▣", desc: "イラスト・デザイン・画像編集に使えるAIを集めました。" },
   { id: "video",    name: "動画生成",         icon: "▶", desc: "動画生成・編集・アニメーションに使えるAIを集めました。" },
-  { id: "code",     name: "コード・開発",     icon: "</>", desc: "プログラミング・バグ修正・開発支援に役立つAIを集めました。" },
+  { id: "code",     name: "コード・開発",     icon: "<>", desc: "プログラミング・バグ修正・開発支援に役立つAIを集めました。" },
   { id: "docs",     name: "資料・ドキュメント", icon: "▤", desc: "PDF要約・スライド作成・資料整理に使えるAIを集めました。" },
   { id: "audio",    name: "音楽・音声",       icon: "♪", desc: "作曲・BGM生成・音声合成などに使えるAIを集めました。" }
 ];
