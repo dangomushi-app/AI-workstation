@@ -141,3 +141,8 @@ h2{font-size:16px}
   .app.menu-open #nav button{width:100%;white-space:normal}
   .app.menu-open .nav-label{display:block}
 }
+
+.foot .feedback{display:inline-block;margin-top:8px;color:var(--ac);text-decoration:underline;text-underline-offset:3px}
+.foot .feedback[hidden]{display:none}
+.foot .feedback:hover{color:#fff}
+.foot .feedback:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}

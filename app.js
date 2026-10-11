@@ -106,7 +106,7 @@ function promptView() {
     + sec(`テンプレート（${tpl.length}件）`, tpl.length ? pGrid(tpl) : empty("このタグのテンプレートはありません。"));
 }
 
-const NAV = [["home", "⌂", "ホーム"], ["ai", "≡", "AI一覧"], ["fav", "★", "お気に入り"], ["hist", "◷", "履歴"], ["prompt", "✦", "プロンプト"], ["settings", "⚙", "設定"]];
+const NAV = [["home", "⌂", "ホーム"], ["ai", "▦", "AI一覧"], ["fav", "★", "お気に入り"], ["hist", "◷", "履歴"], ["prompt", "✦", "プロンプト"], ["settings", "⚙", "設定"]];
 
 function renderNav() {
   const on = (n, c) => (view.name === n && (!c || view.cat === c)) ? " on" : "";
@@ -177,6 +177,11 @@ document.addEventListener("click", e => {
 
 $("#q").addEventListener("input", e => { q = e.target.value.trim(); render(); });
 $("#searchForm").addEventListener("submit", e => e.preventDefault());
+
+// ----- フッターの「ご意見はこちら」 -----
+if (typeof FEEDBACK_URL === "string" && /^https?:\/\//.test(FEEDBACK_URL)) {
+  const fb = $("#feedback"); fb.href = FEEDBACK_URL; fb.hidden = false;
+}
 
 // ----- スマホ向け：右上の3本線ボタンでメニューを開閉 -----
 const appEl = $(".app"), menuBtn = $("#menuBtn");
